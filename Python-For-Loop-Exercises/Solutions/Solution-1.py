@@ -1,17 +1,24 @@
-# The solution to Exercise 1 - Sum Of N Numbers
+# =============================================
+# The Solution
+# =============================================
 
-# Write a program that gets 3 input values from the user.
-# The first input tells you how many numbers will follow.
-# The next 2 inputs should be whole numbers, that you need to sum.
-# Print the sum of all the input numbers (not including the first input).
+# ------------------------------
+# Detailed Breakdown
+# ------------------------------
+"""
+1. Read the maximum number.
+2. Loop from 1 to that number.
+3. Check if a number is odd.
+4. Print it if it is.
+"""
+# =============================================
 
-# Variables
-count = int(input())
-total = 0
+# ------------------------------
+# My Solution
+# ------------------------------
 
-# Main Code
-for numbers in range(count):
-    number = int(input())
-    total += number
+limit: int = int(input())
 
-print(total)
+for number in range(1, limit + 1):
+    if number % 2 != 0:
+        print(number)
